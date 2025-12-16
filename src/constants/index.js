@@ -1,19 +1,19 @@
 import {
-  Shield,
-  Code,
-  Zap,
-  Globe,
-  Box,
-  ChartColumn,
-  Terminal,
+  Book,
+  CircleCheckBig,
+  GitBranch,
+  Github,
+  Lock,
+  TestTube,
 } from 'lucide-react'
 import {
-  TestTube,
-  GitBranch,
-  Lock,
-  CircleCheckBig,
-  Github,
-  Book,
+  Box,
+  ChartColumn,
+  Code,
+  Globe,
+  Shield,
+  Terminal,
+  Zap,
 } from 'lucide-react'
 
 export const versions = [
@@ -30,7 +30,7 @@ export const navItemsOnsite = [
 
 export const navItemsExternal = [
   { label: 'Docs', href: '/docs/introduction' },
-  { label: 'Blog', href: '#' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Community', href: '/community' },
 ]
 
@@ -340,7 +340,7 @@ export const ResourcesLinks = [
     text: 'API Reference',
   },
   { href: 'policies', text: 'Policy Samples' },
-  { href: '#', text: 'Blog' },
+  { href: 'blog', text: 'Blog' },
 ]
 
 export const communityLinks = [

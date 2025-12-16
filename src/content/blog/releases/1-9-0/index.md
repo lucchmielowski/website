@@ -6,7 +6,7 @@ description: Kyverno 1.9 released with new policy exceptions, cleanup policies, 
 draft: false
 ---
 
-![kyverno](kyverno-horizontal.png)
+![kyverno](./kyverno-horizontal.png)
 
 With the ringing in of the new year the Kyverno team is proud to announce the release of Kyverno 1.9.0, a release that we've been working hard on over the past several months and which is full of massive new features include TWO brand new rule types, several community-requested enhancements, and loads of fixes and improvements. Without any further ado, let's dive right in and show you what's in the bag.
 

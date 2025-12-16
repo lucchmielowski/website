@@ -1,0 +1,26 @@
+---
+// Import the `<StarlightPage>` component first to set up cascade layers.
+import Sidebar from '@astrojs/starlight/components/Sidebar.astro'
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro'
+import { getBlogSidebar } from '../../lib/blogSidebar'
+
+// Import collection
+import { getCollection, render } from 'astro:content'
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog')
+  return posts.map((blog) => ({
+    params: { slug: blog.id },
+    props: { blog },
+  }))
+}
+
+const sidebar = await getBlogSidebar()
+
+const { blog } = Astro.props
+const { Content } = await render(blog)
+---
+
+<StarlightPage frontmatter={{ title: 'Kyverno Blog' }} sidebar={sidebar}>
+  <Content />
+</StarlightPage>

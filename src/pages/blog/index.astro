@@ -1,0 +1,24 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro'
+import { getCollection } from 'astro:content'
+
+import { getBlogSidebar } from '../../lib/blogSidebar'
+
+const sidebar = await getBlogSidebar()
+
+const allPolicy = await getCollection('blog')
+---
+
+<StarlightPage frontmatter={{ title: 'Kyverno Blog Posts' }} sidebar={sidebar}>
+  <ul>
+    {
+      allPolicy.map((policy) => (
+        <li>
+          <a class="" href={`/policies/${policy.id}/`} data-astro-prefetch>
+            {policy?.data.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</StarlightPage>

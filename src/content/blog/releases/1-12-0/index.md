@@ -6,7 +6,7 @@ description: Kyverno 1.12 released with new alternative report server, Global Co
 draft: false
 ---
 
-![kyverno](kyverno-horizontal.png)
+![kyverno](./kyverno-horizontal.png)
 
 The Kyverno team is thrilled to announce the launch of version 1.12 hot on the heels of KubeCon EU 2024. Our interactions with Kyverno users during the conference have been incredibly insightful, with many expressing eager anticipation for the features introduced in this latest release. With over 330 pull requests merged, and 32 new contributors onboarded, we extend our heartfelt thanks to the Kyverno community for its invaluable contributions. Join us as we delve into the exciting new features of the 1.12 release.
 

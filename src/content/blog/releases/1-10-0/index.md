@@ -6,7 +6,7 @@ description: Kyverno 1.10 released with featuring separate controllers, external
 draft: false
 ---
 
-![kyverno](kyverno-horizontal.png)
+![kyverno](./kyverno-horizontal.png)
 
 The Kyverno team are proud to announce the release of Kyverno 1.10, a minor release in terms of version number but a major release in every other regard. With around four months in the making and after four pre-releases and nearly 500 pull requests merged, Kyverno 1.10 is one of the largest releases in the history of the project and features a ton of new and highly-requested features and a staggering number of fixes and improvements. It also brings with it some breaking changes so please read thoroughly. We can't wait for you to see what's inside so let's get started!
 
