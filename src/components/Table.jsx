@@ -80,22 +80,22 @@ const StatusIcon = ({ status }) => {
 
 const CellContent = ({ text, status }) => {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-3">
       <StatusIcon status={status} />
-      <span className="leading-relaxed">{text}</span>
+      <span className="leading-relaxed text-white/90">{text}</span>
     </div>
   )
 }
 
 export const Table = ({ data = [] }) => {
   return (
-    <table className="w-full">
+    <table className="w-full border-collapse">
       <thead className="w-full hidden sm:table-header-group">
-        <tr className="w-full flex flex-col sm:flex-row sm:justify-between items-start sm:items-center bg-dark-50 rounded-t-2xl gap-4 sm:gap-8 min-h-[80px] py-4">
-          <th className="font-bold w-full sm:w-1/4 px-4 sm:px-0 sm:pl-6 text-left flex items-center">
+        <tr className="w-full flex flex-col sm:flex-row sm:justify-between items-start sm:items-center bg-dark-50/90 backdrop-blur-sm rounded-t-2xl gap-4 sm:gap-8 min-h-[80px] py-4 border-b-2 border-stroke">
+          <th className="font-bold w-full sm:w-1/4 px-4 sm:px-0 sm:pl-6 text-left flex items-center text-white text-sm uppercase tracking-wider">
             Feature
           </th>
-          <th className="flex items-center space-x-4 px-4 sm:px-0 sm:w-[37.5%]">
+          <th className="flex items-center space-x-3 px-4 sm:px-0 sm:w-[37.5%] text-white text-sm uppercase tracking-wider font-semibold">
             <img
               src="assets/images/kyverno-square.svg"
               alt="kyverno logo"
@@ -103,7 +103,7 @@ export const Table = ({ data = [] }) => {
             />
             <span>Kyverno</span>
           </th>
-          <th className="flex items-center space-x-4 px-4 sm:px-0 sm:w-[37.5%]">
+          <th className="flex items-center space-x-3 px-4 sm:px-0 sm:w-[37.5%] text-white text-sm uppercase tracking-wider font-semibold">
             <img
               src="assets/images/opa.svg"
               alt="opa logo"
@@ -112,7 +112,7 @@ export const Table = ({ data = [] }) => {
             <span className="hidden sm:inline">Open Policy Agent</span>
             <span className="sm:hidden">OPA</span>
           </th>
-          <th className="flex items-center space-x-4 px-4 sm:px-0 sm:w-[37.5%]">
+          <th className="flex items-center space-x-3 px-4 sm:px-0 sm:w-[37.5%] text-white text-sm uppercase tracking-wider font-semibold">
             <svg
               className="h-6 w-6 sm:h-10 sm:w-10 flex-shrink-0"
               viewBox="0 0 24 24"
@@ -154,11 +154,11 @@ export const Table = ({ data = [] }) => {
             <tr
               key={feature}
               className={`w-full flex flex-col sm:flex-row sm:justify-between items-start 
-                sm:items-center gap-4 sm:gap-8 rounded-xl min-h-[80px] py-4 ${
-                  index % 2 === 0 ? 'bg-stroke' : 'bg-dark-50'
-                }`}
+                sm:items-center gap-4 sm:gap-8 min-h-[80px] py-4 transition-colors duration-200 hover:bg-stroke/50 ${
+                  index % 2 === 0 ? 'bg-stroke/30' : 'bg-dark-50/50'
+                } ${index === data.length - 1 ? 'rounded-b-2xl' : ''}`}
             >
-              <td className="font-bold w-full sm:w-1/4 px-4 sm:px-0 sm:pl-6 flex items-center">
+              <td className="font-semibold w-full sm:w-1/4 px-4 sm:px-0 sm:pl-6 flex items-center text-white">
                 {feature}
               </td>
 

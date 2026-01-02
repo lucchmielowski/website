@@ -62,16 +62,22 @@ export const whyKyvernoCards = [
 
 export const cardColors1 = [
   {
-    bg: 'bg-orange-900/70',
-    text: 'text-orange-300',
+    iconBg: 'bg-accent-100/15 border border-accent-100/30',
+    iconText: 'text-accent-100',
+    titleBg: 'bg-accent-100',
+    titleText: 'text-white',
   },
   {
-    bg: 'bg-green-900/70',
-    text: 'text-green-300',
+    iconBg: 'bg-primary-100/15 border border-primary-100/30',
+    iconText: 'text-primary-100',
+    titleBg: 'bg-primary-100',
+    titleText: 'text-white',
   },
   {
-    bg: 'bg-purple-900/70',
-    text: 'text-purple-300',
+    iconBg: 'bg-emerald-500/15 border border-emerald-500/30',
+    iconText: 'text-emerald-400',
+    titleBg: 'bg-emerald-500',
+    titleText: 'text-white',
   },
 ]
 

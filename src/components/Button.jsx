@@ -7,15 +7,17 @@ export const Button = ({
   ...restProps
 }) => {
   const baseStyles =
-    'min-w-40 flex justify-center items-center py-2 px-3 rounded-md font-medium md:text-base'
+    'min-w-40 flex justify-center items-center py-3 px-6 rounded-lg font-semibold md:text-base transition-all duration-200'
 
   const variantStyles = {
     primary:
-      'bg-primary-100 text-white hover:bg-blue-50 hover:text-primary-100',
-    secondary: 'border border-primary-100 text-white hover:border-white',
-    accent: 'bg-accent-100 text-white hover:bg-accent-50 hover:text-dark-100',
+      'bg-primary-100 text-white hover:bg-primary-75 hover:shadow-lg hover:shadow-primary-100/30 transition-all duration-200',
+    secondary:
+      'border-2 border-primary-100 text-white hover:bg-primary-100/10 hover:border-primary-75 transition-all duration-200',
+    accent:
+      'bg-accent-100 text-white hover:bg-accent-75 hover:shadow-lg hover:shadow-accent-100/30 transition-all duration-200',
     accentSecondary:
-      'border border-primary-100 text-white hover:border-accent-25',
+      'border-2 border-primary-100 text-white hover:border-accent-100 hover:bg-accent-100/10 transition-all duration-200',
   }
 
   const sizeStyles = {

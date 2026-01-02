@@ -9,7 +9,7 @@ export const Tag = ({
   ...restProps
 }) => {
   const baseStyles =
-    'min-w-40 py-2 px-3 flex justify-center items-center space-x-2 rounded-4xl font-bold text-sm'
+    'min-w-40 py-2.5 px-4 flex justify-center items-center space-x-2 rounded-full font-semibold text-sm transition-all duration-200'
 
   const variantStyles = {
     primary: 'bg-primary-100 text-white',

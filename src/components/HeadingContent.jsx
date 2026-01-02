@@ -14,7 +14,7 @@ export const HeadingContent = ({
       case 'level1':
         return type === 'header'
           ? `w-full inline-flex flex-wrap justify-center items-center gap-x-2
-                        text-5xl px-2 sm:text-[52px] md:text-6xl font-bold tracking-wide text-primary-100 
+                        text-5xl px-2 sm:text-[56px] md:text-6xl lg:text-7xl font-bold tracking-wide text-primary-100 
                         capitalize leading-12 sm:leading-16`
           : 'text-[1.4rem] sm:text-xl md:text-2xl max-w-[90%] sm:max-w-[600px] md:max-w-[700px] leading-8 sm:leading-9 md:leading-10 text-white/80'
 

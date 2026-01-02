@@ -125,7 +125,7 @@ export const ComparisonChart = () => {
   ]
 
   return (
-    <section className="flex flex-col justify-center items-center pb-6 px-6">
+    <section className="flex flex-col justify-center items-center pt-6 pb-6 px-6">
       <div className="items-center flex flex-col space-y-6 my-5">
         <h2 className="text-4xl font-bold tracking-wide text-center">
           Kyverno <span className="lowercase">vs</span>
@@ -138,7 +138,7 @@ export const ComparisonChart = () => {
       </div>
       <div
         className="flex justify-center items-center w-full md:max-w-260 
-        bg-dark-50 border border-stroke p-6 rounded-2xl sm:overflow-x-auto text-[16px] mt-8"
+        bg-dark-50/80 backdrop-blur-sm border border-stroke/50 p-6 sm:p-8 rounded-2xl sm:overflow-x-auto text-[16px] mt-8 shadow-lg"
       >
         <Table data={comparisonData} />
       </div>
